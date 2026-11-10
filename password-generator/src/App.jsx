@@ -6,7 +6,9 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  useEffect(() => {
+    // Side effect logic here
+  }, [count])
   return (
     <>
       <h1 className='text-4xl text-center text-white'>Password-generator</h1>
